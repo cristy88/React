@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+html, body, #root, .home {
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  height: 42px;
+  display: flex;
+  text-align: center;
+  a {
+    flex: 1;
+    color: black;
+    line-height: 40px;
+    border-bottom: 2px solid transparent;
+  }
+  .active {
+    border-color: #990000;
+    color: #990000;
+  }
+}
+
+main {
+  flex: 1;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+.pro {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.navL {
+  width: 100px;
+  background: #F2F4F5;
+  color: #464948;
+  overflow-y: auto;
+  p {
+    height: 80px;
+    padding: 0 20px;
+
+  }
+  .active {
+    background: white;
+    color: black;
+  }
+}
+
+
+.con {
+  flex: 1;
+  overflow-y: auto;
+  h3 {
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 20px;
+    background: #999;
+  }
+  li {
+    display: flex;
+    margin: 10px 0;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    >div {
+      flex: 1;
+    }
+  }
+}
+
+.change {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+  button {
+    padding: 3px;
+  }
+}
+
+.price {
+  color: red;
+}
